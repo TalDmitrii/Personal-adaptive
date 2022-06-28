@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sedona</title>
 </head>
-<body>
-    <h1>Hi Chayka!</h1>
+
+<body class="page__body">
+    <header class="page-header">
+        <a class="page-header__logo" href="#">
+            <img src="#" width="101.7" height="84" alt="City of Sedona">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site-list__item--active">
+                        <a href="#">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="photo and video.html">
+                            Фото и видео
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="form.html">
+                            Форма отзыва
+                        </a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">
+                            HTML Academy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <h1 class="visually-hidden">
+            Welcome to the Gorgeouse
+        </h1>
+
+        <div class="main-descroption">
+            Седона - небольшой городок в Аризоне, заслуживающий большего!
+        </div>
+
+        <section class="advantages">
+            <h2 class="advantages-title">
+                Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон.
+            </h2>
+            <ul class="advantages-list">
+                <li class="advantages-item">
+                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
+                    <ul class="advantages-item__description">
+                        <li>Настоящий городок</li>
+                        <li>№1</li>
+                        <li>Седона не аттракцион для туристов, там течет своя жизнь</li>
+                    </ul>
+                    <img src="img/photo-city@1*1.jpg" alt="фото города" width="520" height="260">
+                    <dl class="advantages-item__list">
+                        <div class="advantages-item__list__item">
+                            <dt class="#">
+                                Жилье
+                            </dt>
+                            <!-- Иконку с домом (svg) введем в css -->
+                            <dd class="#">
+                                Рекомендуем пожить в настоящем мотеле, все как в кино!
+                            </dd>
+                        </div>
+                        <div class="advantages-item__list__item">
+                            <dt class="#">
+                                СУВЕНИРЫ
+                            </dt>
+                            <!-- Иконку с домом (svg) введем в css -->
+                            <dd class="#">
+                                Не только китайского, но и местного производства!
+                            </dd>
+                        </div>
+                        <div class="advantages-item__list__item">
+                            <dt class="#">
+                                ЕДА
+                            </dt>
+                            <!-- Иконку с домом (svg) введем в css -->
+                            <dd class="#">
+                                Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+                            </dd>
+                        </div>
+                    </dl>
+                </li>
+                <li>
+                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
+                    <ul class="advantages-item__description">
+                        <li>ТАМ ЕСТЬ Мост дьявола</li>
+                        <li>№2</li>
+                        <li>Да, по нему можно пройти! Если вы осмелитесь, конечно</li>
+                    </ul>
+                    <img src="img/photo-bridge@1*1.jpg" alt="фото моста" width="520" height="260">
+                </li>
+                <li>
+                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
+                    <ul class="advantages-item__description">
+                        <li>НЕБОЛЬШАЯ ПЛОЩАДЬ</li>
+                        <li>№3</li>
+                        <li>ВСЕ интересные места находятся очень близко</li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
+                    <ul class="advantages-item__description">
+                        <li>КРАСИВАЯ ДОРОГА</li>
+                        <li>№4</li>
+                        <li>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
+                    <ul class="advantages-item__description">
+                        <li>МАЛО ТУРИСТОВ</li>
+                        <li>№5</li>
+                        <li>Большинство едет в гранд каньон и толпится там</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="hotel">
+            <h2 class="hotel-title">
+                Заинтересовались?
+            </h2>
+            <div class="hotel-invitation">
+                Укажите предполагаемые даты поездки,
+                и мы покажем вам лучшие предложения гостиниц в седоне
+            </div>
+            <a class="button button-search" href="#">
+                Найти гостиницу
+            </a>
+            <div class="map">
+                <img src="img/map-mobile.jpg" alt="карта" width="320" height="350">
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <h2 class="page-footer__title">
+                #visitSEDONA
+            </h2>
+            <div class="page-footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--twitter" href="#">Мы в
+                            Твиттере</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--youtube" href="#">Мы в Ютюбе</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="page-footer__copyright copyright">
+                <b class="copyright__text">Разработано</b>
+                <a href="#" class="copyright__link button button--copyright">
+                    <img src="img/htmlacademy.svg" alt="логотип htmlacademy" width="26.9" height="34.1">
+                </a>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>
