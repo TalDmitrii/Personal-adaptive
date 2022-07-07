@@ -1,0 +1,23 @@
+{
+  "name": "personal-adaptive",
+  "scripts": {
+      "build": "gulp build",
+      "editorconfig": "editorconfig-cli",
+      "start": "npm run build && gulp serve",
+      "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+      "eslint": "eslint source/js",
+      "test": "npm run editorconfig && npm run stylelint && npm run eslint"
+  },
+  "devDependencies": {
+      "autoprefixer": "^9.5.1",
+      "browser-sync": "^2.26.3",
+      "gulp": "^4.0.2",
+      "gulp-cssbeautify": "^1.0.1",
+      "gulp-csso": "^3.0.1",
+      "gulp-less": "^4.0.1",
+      "gulp-plumber": "^1.2.1",
+      "gulp-postcss": "^8.0.0",
+      "gulp-sourcemaps": "^3.0.0",
+      "normalize.css": "^8.0.1"
+  }
+}
