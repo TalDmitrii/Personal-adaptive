@@ -1,0 +1,64 @@
+.features {
+    list-style: none;
+    // width: 320px;
+    // margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.features__item {
+    margin-top: 26px;
+    margin-left: 69px;
+}
+
+.features__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.features__text {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.features__item--house,
+.features__item--gift,
+.features__item--food {
+    position: relative;
+}
+
+.features__item--house::after {
+    content: "";
+    background-image: url(../img/icon-house.svg);
+    width: 39px;
+    height: 37px;
+    position: absolute;
+    top: -12px;
+    left: -48px;
+}
+
+.features__item--gift::after {
+    content: "";
+    background-image: url(../img/icon-gift.svg);
+    width: 32px;
+    height: 38px;
+    position: absolute;
+    top: -12px;
+    left: -48px;
+}
+
+.features__item--food::after {
+    content: "";
+    background-image: url(../img/icon-burger.svg);
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: -12px;
+    left: -48px;
+}
