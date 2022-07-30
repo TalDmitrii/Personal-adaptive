@@ -3,12 +3,16 @@
     line-height: 26px;
     text-align: center;
     margin: 0;
-    margin-top: 46px;
+    // margin-top: 46px;
     margin-bottom: 17px;
 }
 
 .contact-info {
+    border: none;
     position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
 }
 
 .contact-info::after {
@@ -18,7 +22,7 @@
     background-color: #E5E5E5;
 
     position: absolute;
-    top: 380px;
+    top: 326px;
     left: -15px;
 }
 
@@ -28,7 +32,7 @@
     font-weight: 400;
 
     width: 320px;
-    margin: 20px 0;
+    margin: 0;
 
     // display: flex;
     // flex-wrap: wrap;
@@ -36,7 +40,7 @@
 
 .contact-info__label {
     margin-left: 42px;
-    margin-top: 14px; 
+    // margin-top: 14px; 
     margin-bottom: 8px; 
     display: block;
     // vertical-align: top;
@@ -61,8 +65,8 @@
     color: #000;
 }
 
-.contact-info__phone,
-.contact-info__letter {
+.contact-info__icon--phone,
+.contact-info__icon--letter {
     width: 58px;
     height: 58px;
     background-color: #E6E6E6;
@@ -70,7 +74,7 @@
     position: relative;
 }
 
-.contact-info__phone::after {
+.contact-info__icon--phone::after {
     content: "";
     width: 18px;
     height: 18px;
@@ -80,7 +84,7 @@
     background-image: url(../img/phone.svg);
 }
 
-.contact-info__letter::after {
+.contact-info__icon--letter::after {
     content: "";
     width: 16px;
     height: 12px;
