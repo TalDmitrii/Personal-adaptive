@@ -43,6 +43,24 @@
                 </ul>
             </div>
         </nav>
+
+        <div class="page-header__intro intro-description">
+            <!-- <ul class="intro-description__list">
+                <li class="intro-description__item">
+                    WELCOME
+                </li>
+                <li class="intro-description__item">
+                     - to the gorgeouse -
+                </li>
+                <li class="intro-description__item">
+                    SEDONA
+                </li>
+                <li class="intro-description__item">
+                    "Becouse the Grand <br>
+                    Canyon sucks!"
+                </li>
+            </ul> -->
+        </div>
     </header>
 
     <main class="page-main">
@@ -51,7 +69,7 @@
         </h1>
 
         <p class="page-main__description">
-            Седона - небольшой городок в Аризоне, заслуживающий большего!
+            Седона - небольшой<br> городок в Аризоне,<br> заслуживающий большего!
         </p>
 
         <section class="page-main__advantages advantages">
@@ -61,38 +79,38 @@
             <ul class="advantages__list">
                 <li class="advantages__item">
                     <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
-                    <div class="advantages__description">
+                    <div class="advantages__description advantages__description--picture">
                         <h3 class="advantages__header">Настоящий городок</h3>
                         <p class="advantages__number">№1</p>
                         <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
-                    <img class="advantages__img" src="img/photo-city@1x 1.jpg" alt="фото города" width="520"
+                    <img class="advantages__img" src="img/photo-city@1x 1.jpg" alt="фото города" width="320"
                         height="260">
                     <ul class="advantages__features features">
-                        <li class="features__item">
-                            <h4 class="#">
+                        <li class="features__item features__item--house">
+                            <h4 class="features__title">
                                 Жилье
                             </h4>
                             <!-- Иконку с домом (svg) введем в css -->
-                            <p class="#">
+                            <p class="features__text">
                                 Рекомендуем пожить в настоящем мотеле, все как в кино!
                             </p>
                         </li>
-                        <li class="features__item">
-                            <h4 class="#">
+                        <li class="features__item features__item--gift">
+                            <h4 class="features__title">
                                 СУВЕНИРЫ
                             </h4>
                             <!-- Иконку с домом (svg) введем в css -->
-                            <p class="#">
+                            <p class="features__text">
                                 Не только китайского, но и местного производства!
                             </p>
                         </li>
-                        <li class="features__item">
-                            <h4 class="#">
+                        <li class="features__item features__item--food">
+                            <h4 class="features__title">
                                 ЕДА
                             </h4>
                             <!-- Иконку с домом (svg) введем в css -->
-                            <p class="#">
+                            <p class="features__text">
                                 Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
                             </p>
                         </li>
@@ -100,12 +118,12 @@
                 </li>
                 <li class="advantages__item">
                     <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
-                    <div class="advantages__description">
+                    <div class="advantages__description  advantages__description--picture">
                         <h3 class="advantages__header">ТАМ ЕСТЬ Мост дьявола</h3>
                         <p class="advantages__number">№2</p>
                         <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                     </div>
-                    <img src="img/photo-bridge@1x 1.jpg" alt="фото моста" width="520" height="260">
+                    <img  class="advantages__img" src="img/photo-bridge@1x 1.jpg" alt="фото моста" width="320" height="260">
                 </li>
                 <li class="advantages__item">
                     <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
@@ -134,7 +152,7 @@
             </ul>
         </section>
 
-        <section class="hotel">
+        <section class="page-main__hotel hotel">
             <h2 class="hotel__title">
                 Заинтересовались?
             </h2>
@@ -142,7 +160,7 @@
                 Укажите предполагаемые даты поездки,
                 и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
-            <a class="button button-search" href="#">
+            <a class="hotel__button button" href="#">
                 Найти гостиницу
             </a>
             <div class="map">
@@ -152,20 +170,19 @@
     </main>
 
     <footer class="page-footer">
-        <a class="page-footer__title">
+        <a class="page-footer__title" href="index.html">
             #visitSEDONA
         </a>
         <div class="page-footer__social social">
             <ul class="social__list">
                 <li class="social__item">
-                    <a class="social__link social__link--twitter" href="#">Мы в
-                        Твиттере</a>
+                    <a class="social__link social__link--twitter" href="#" alt="Мы в Твиттере"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                    <a class="social__link social__link--facebook" href="#" alt="Мы в Фейсбуке"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--youtube" href="#">Мы в Ютюбе</a>
+                    <a class="social__link social__link--youtube" href="#" alt="Мы в Ютюбе"></a>
                 </li>
             </ul>
         </div>

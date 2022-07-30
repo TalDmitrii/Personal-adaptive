@@ -43,6 +43,9 @@
                 </ul>
             </div>
         </nav>
+        <div class="page-header__photo">
+            <img src="img/back-desktop.jpg" alt="Вид Седона" width="320px" height="214px">
+        </div>
     </header>
 
     <main class="review">
@@ -53,35 +56,42 @@
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
 
-        <form class="review__form" action="https://e-mail.ru" method="post">
+        <form class="review__form form" action="https://e-mail.ru" method="post">
 
-            <div class="review__introduce introduce">
+            <fieldset class="review__introduce introduce">
+                <legend class="form__title">
+                    Представтесь:
+                </legend>
                 <p class="introduce__item">
-                    <label class="introduce__label" for="appoinment__name">Имя*</label>
+                    <label class="introduce__label" for="appoinment__name">Имя*:</label>
                     <input id="appoinment__name" type="text" name="name" placeholder="Петр">
                 </p>
                 <p class="introduce__item">
-                    <label class="introduce__label" for="surname">Фамилия*</label>
+                    <label class="introduce__label" for="surname">Фамилия*:</label>
                     <input id="surname" type="text" name="surname" placeholder="Иванов">
                 </p>
                 <p class="introduce__item">
                     <label class="introduce__label" for="patronymick">Отчество</label>
                     <input id="patronymick" type="text" name="patronymick" placeholder="Александрович">
                 </p>
-            </div>
+            </fieldset>
 
-            <div class="review__contact-info contact-info">
+            <fieldset class="review__contact-info contact-info">
+                <legend class="contact-info__title">
+                    Контактная информация:
+                </legend>
+
                 <p class="contact-info__item">
                     <label class="contact-info__label" for="phone">Контактный телефон*:</label>
                     <input id="phone" type="tel" name="phone" placeholder="Введите телефон">
-                    <span class="contact-info__phone">svg</span>
+                    <span class="contact-info__icon contact-info__icon--phone"></span>
                 </p>
                 <p class="contact-info__item">
                     <label class="contact-info__label" for="e-mail">Электронная почты*:</label>
                     <input id="e-mail" type="email" name="e-mail" placeholder="Введите e-mail">
-                    <span class="contact-info__letter">svg</span>
+                    <span class="contact-info__icon contact-info__icon--letter"></span>
                 </p>
-            </div>
+            </fieldset>
 
             <fieldset class="review__fieldset radio">
                 <legend class="radio__legend">Ваше общее впечатление:</legend>
@@ -89,6 +99,7 @@
                 <label class="radio__item">
                     <input class="visually-hidden" type="radio" id="positive" value="положительное" name="impression" checked>
                     Скорее положительное
+                    <!-- <span class="radio__decor"></span> -->
                 </label>
                 <label class="radio__item">
                     <input class="visually-hidden" type="radio" id="negative" value="отрицательное" name="impression">
@@ -138,20 +149,19 @@
     </main>
 
     <footer class="page-footer">
-        <a class="page-footer__title">
+        <a class="page-footer__title" href="index.html">
             #visitSEDONA
         </a>
         <div class="page-footer__social social">
             <ul class="social__list">
                 <li class="social__item">
-                    <a class="social__link social__link--twitter" href="#">Мы в
-                        Твиттере</a>
+                    <a class="social__link social__link--twitter" href="#" alt="Мы в Твиттере"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                    <a class="social__link social__link--facebook" href="#" alt="Мы в Фейсбуке"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--youtube" href="#">Мы в Ютюбе</a>
+                    <a class="social__link social__link--youtube" href="#" alt="Мы в Ютюбе"></a>
                 </li>
             </ul>
         </div>
