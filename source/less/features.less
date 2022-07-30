@@ -27,15 +27,20 @@
     margin: 0;
 }
 
-.features__item--house,
-.features__item--gift,
-.features__item--food {
+.features__item {
     position: relative;
 }
 
-.features__item--house::after,
-.features__item--gift::after,
-.features__item--food::after {
+// .features__item--house::after,
+// .features__item--gift::after,
+// .features__item--food::after {
+//     content: "";
+//     position: absolute;
+//     top: -12px;
+//     left: -48px;
+// }
+
+.features__item::after {
     content: "";
     position: absolute;
     top: -12px;

@@ -203,8 +203,7 @@
 .contact-info__item input::placeholder {
   color: #000;
 }
-.contact-info__icon--phone,
-.contact-info__icon--letter {
+.contact-info__icon {
   width: 58px;
   height: 58px;
   background-color: #E6E6E6;
@@ -295,14 +294,10 @@
   font-weight: 400;
   margin: 0;
 }
-.features__item--house,
-.features__item--gift,
-.features__item--food {
+.features__item {
   position: relative;
 }
-.features__item--house::after,
-.features__item--gift::after,
-.features__item--food::after {
+.features__item::after {
   content: "";
   position: absolute;
   top: -12px;
@@ -772,9 +767,7 @@ body {
 .social__item {
   position: relative;
 }
-.social__link--twitter::after,
-.social__link--facebook::after,
-.social__link--youtube::after {
+.social__link::after {
   content: "";
   position: absolute;
   top: 18px;
@@ -821,6 +814,37 @@ body {
 .video img {
   display: block;
 }
+.video__track {
+  display: block;
+  width: 280px;
+  height: 45px;
+  background-color: #000;
+  margin: 0 auto;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 66px;
+  left: 20px;
+}
+.video__track::before {
+  content: "";
+  width: 235px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 22px;
+  left: 23px;
+  opacity: 0.2;
+}
+.video__track::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 18px;
+  left: 60px;
+  border-radius: 50%;
+}
 .video-btn {
   display: block;
   width: 280px;
@@ -858,37 +882,6 @@ body {
   right: 23px;
   border: none;
   cursor: pointer;
-}
-.video-track {
-  display: block;
-  width: 280px;
-  height: 45px;
-  background-color: #000;
-  margin: 0 auto;
-  opacity: 0.6;
-  position: absolute;
-  bottom: 66px;
-  left: 20px;
-}
-.video-track::before {
-  content: "";
-  width: 235px;
-  height: 3px;
-  background-color: #fff;
-  position: absolute;
-  top: 22px;
-  left: 23px;
-  opacity: 0.2;
-}
-.video-track::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  position: absolute;
-  top: 18px;
-  left: 60px;
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
