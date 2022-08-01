@@ -19,25 +19,36 @@
 .advantages__item {
     text-align: center;
     position: relative;
+    
+    &:nth-child(3)::after,
+    &:nth-child(4)::after {
+        content: "";
+        width: 280px;
+        height: 1px;
+        position: absolute;
+        top: 166px;
+        left: 20px;
+        background-color: #D6D6D6;
+    }
 }
 
 .advantages__item:nth-child(3),
-// .advantages__item:nth-child(4),
+.advantages__item:nth-child(4),
 .advantages__item:nth-child(5) {
     background-color: #EEEEEE;
-    height: 172px;
+    // height: 172px;
 }
 
-.advantages__item:nth-child(3)::after,
-.advantages__item:nth-child(4)::after {
-    content: "";
-    width: 280px;
-    height: 1px;
-    position: absolute;
-    top: 170px;
-    left: 20px;
-    background-color: #D6D6D6;
-}
+// .advantages__item:nth-child(3)::after,
+// .advantages__item:nth-child(4)::after {
+//     content: "";
+//     width: 280px;
+//     height: 1px;
+//     position: absolute;
+//     top: 170px;
+//     left: 20px;
+//     background-color: #D6D6D6;
+// }
 
 .advantages__description {
     font-size: 14px;
@@ -58,32 +69,39 @@
 .advantages__header {
     font-size: 18px;
     line-height: 26px;
-    padding-top: 39px;
+    padding-top: 26px;
     margin-top: 0;
 }
 
-.advantages__number::before {
+.advantages__number::before,
+.advantages__number::after {
     content: "";
     width: 10px;
     height: 1px;
     // background-color: #fff;
     background-color: #000;
     position: absolute;
-    top: 92px;
+    top: 76px;
+}
+
+.advantages__number::before {
+    content: "";
     left: 134px;
 }
 
 .advantages__number::after {
     content: "";
-    width: 10px;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    top: 92px;
     left: 176px;
 }
 
+
 // Не понял, как прописать цвет штриха в выбранном элементе
+
+// .advantages__list .advantages__number:nth-of-type(2)::before{
+//     background-color: #fff;
+// }
+
+// .advantages__item:nth-child(3)::after,
 
 // .advantages__number:nth-child(3)::before {
 //     background-color: #000;
@@ -98,7 +116,7 @@
 // }
 
 .advantages__text {
-    padding-bottom: 39px;
+    padding-bottom: 24px;
     width: 268px;
     margin: 0 auto;   
 }

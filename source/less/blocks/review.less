@@ -40,3 +40,24 @@
     margin-bottom: 47px;
 
 }
+
+.page-review__photo {
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+.page-review__photo img {
+    display: block;
+}
+
+.page-review__photo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    background-image: url(../img/sedona.svg);
+    width: 229px;
+    height: 39px;
+}
