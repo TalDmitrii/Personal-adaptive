@@ -11,8 +11,6 @@
 .advantages__list {
   list-style: none;
   width: 320px;
-  margin: 0;
-  padding: 0;
 }
 .advantages__item {
   text-align: center;
@@ -50,7 +48,6 @@
   font-size: 18px;
   line-height: 26px;
   padding-top: 26px;
-  margin-top: 0;
 }
 .advantages__number::before,
 .advantages__number::after {
@@ -90,18 +87,15 @@
 .checkbox {
   border: none;
   position: relative;
-  margin: 0;
   padding: 0;
   margin-top: 20px;
 }
 .checkbox__legend {
   text-align: center;
-  margin: 0;
   margin-bottom: 37px;
 }
 .checkbox__item {
   text-align: left;
-  margin: 0;
   margin-bottom: 53px;
   margin-left: 118px;
   display: block;
@@ -146,13 +140,11 @@
 }
 .contact-info__title {
   text-align: center;
-  margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 3px;
 }
 .contact-info {
   border: none;
   position: relative;
-  margin: 0;
   padding: 0;
   margin-top: 20px;
 }
@@ -162,7 +154,7 @@
   height: 1px;
   background-color: #E5E5E5;
   position: absolute;
-  top: 326px;
+  top: 238px;
   left: -15px;
 }
 .contact-info__item {
@@ -173,6 +165,7 @@
 }
 .contact-info__label {
   margin-left: 42px;
+  margin-top: 14px;
   margin-bottom: 8px;
   display: block;
 }
@@ -246,7 +239,6 @@
 }
 .emotion__label {
   text-align: center;
-  margin: 0;
   margin-bottom: 15px;
   display: block;
 }
@@ -265,7 +257,6 @@
 }
 .features {
   list-style: none;
-  padding: 0;
   text-align: left;
   margin-top: 30px;
   margin-bottom: 35px;
@@ -276,7 +267,6 @@
   position: relative;
 }
 .features__title {
-  margin: 0;
   margin-bottom: 20px;
 }
 .features__text {
@@ -308,8 +298,6 @@
 }
 .figcaption__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
   margin-left: 20px;
   margin-top: 11px;
 }
@@ -340,13 +328,11 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
 }
 .hotel__title {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
   margin-top: 33px;
 }
 .hotel__invitation {
@@ -371,7 +357,6 @@
 .introduce {
   border: none;
   position: relative;
-  margin: 0;
   padding: 0;
   margin-top: 37px;
 }
@@ -426,8 +411,6 @@
 }
 .main-nav__list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .main-nav__toggle {
   position: absolute;
@@ -450,7 +433,6 @@
   text-decoration: none;
   display: block;
   text-align: center;
-  margin: 0;
   margin-top: 29px;
 }
 .page-header {
@@ -489,8 +471,6 @@
   left: 20px;
 }
 .page-photo__photo {
-  margin: 0;
-  padding: 0;
   position: relative;
 }
 .page-photo__photo img {
@@ -510,7 +490,6 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
   margin-top: 31px;
 }
 .page-photo__text {
@@ -524,13 +503,9 @@
 }
 .page-photo__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
   margin-top: 52px;
 }
 .page-photo__item {
-  margin: 0;
-  padding: 0;
   text-align: center;
   position: relative;
   margin-bottom: 32px;
@@ -553,28 +528,21 @@
   top: 396px;
   left: -15px;
 }
-.page-photo__item figure {
-  margin: 0;
-  padding: 0;
-}
 .page-photo__item:last-child {
   margin-bottom: 48px;
 }
 .radio {
   border: none;
   position: relative;
-  margin: 0;
   padding: 0;
   margin-top: 40px;
 }
 .radio__legend {
   text-align: center;
-  margin: 0;
   margin-bottom: 37px;
 }
 .radio__item {
   text-align: center;
-  margin: 0;
   margin-bottom: 43px;
   margin-left: 98px;
   display: block;
@@ -617,7 +585,6 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
   margin-top: 31px;
 }
 .review__intro {
@@ -650,15 +617,13 @@
   padding: 0;
   margin-bottom: 47px;
 }
-.page-review__photo {
-  margin: 0;
-  padding: 0;
+.review__photo {
   position: relative;
 }
-.page-review__photo img {
+.preview__photo img {
   display: block;
 }
-.page-review__photo::after {
+.review__photo::after {
   content: "";
   display: block;
   position: absolute;
@@ -687,7 +652,6 @@
   justify-content: space-between;
   padding-left: 84px;
   padding-right: 85px;
-  margin: 0;
   margin-top: 34px;
   margin-bottom: 40px;
 }
@@ -730,8 +694,6 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
-  padding: 0;
   margin-bottom: 30px;
 }
 .video__text {
@@ -786,27 +748,25 @@
   margin: 0 auto;
   position: relative;
 }
-.video-btn__replay,
-.video-btn__subtitles,
-.video-btn__fullscreen {
+.video-btn__position {
   position: absolute;
   top: 23px;
   border: none;
   cursor: pointer;
 }
-.video-btn__replay {
+.video-btn__position--replay {
   width: 16px;
   height: 20px;
   background-image: url(../img/replay.svg);
   left: 23px;
 }
-.video-btn__subtitles {
+.video-btn__position--subtitles {
   width: 32px;
   height: 20px;
   background-image: url(../img/subtitles.svg);
   right: 70px;
 }
-.video-btn__fullscreen {
+.video-btn__position--fullscreen {
   width: 20px;
   height: 20px;
   background-image: url(../img/fullscreen.svg);
@@ -867,6 +827,21 @@ h2,
 h3,
 h4 {
   margin: 0;
+}
+fieldset {
+  margin: 0;
+}
+legend {
+  margin: 0;
+  padding: 0;
+}
+label {
+  margin: 0;
+  padding: 0;
+}
+figure {
+  margin: 0;
+  padding: 0;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
