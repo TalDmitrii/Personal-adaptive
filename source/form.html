@@ -43,12 +43,13 @@
                 </ul>
             </div>
         </nav>
-        <div class="page-header__photo">
-            <img src="img/back-desktop.jpg" alt="Вид Седона" width="320px" height="214px">
-        </div>
     </header>
 
     <main class="review">
+        <div class="review__photo">
+            <img src="img/back-desktop.jpg" alt="Вид Седона" width="320px" height="214px">
+        </div>
+
         <h1 class="review__title">
             Оставьте свой отзыв
         </h1>
@@ -83,13 +84,21 @@
 
                 <p class="contact-info__item">
                     <label class="contact-info__label" for="phone">Контактный телефон*:</label>
-                    <input id="phone" type="tel" name="phone" placeholder="Введите телефон">
-                    <span class="contact-info__icon contact-info__icon--phone"></span>
+
+                    <span class="contact-info__wrap">
+                        <input id="phone" type="tel" name="phone" placeholder="Введите телефон">
+                        <span class="contact-info__icon contact-info__icon--phone"></span>
+                    </span>
                 </p>
+
                 <p class="contact-info__item">
                     <label class="contact-info__label" for="e-mail">Электронная почты*:</label>
-                    <input id="e-mail" type="email" name="e-mail" placeholder="Введите e-mail">
-                    <span class="contact-info__icon contact-info__icon--letter"></span>
+
+                    <span class="contact-info__wrap">
+                        <input id="e-mail" type="email" name="e-mail" placeholder="Введите e-mail">
+                        <span class="contact-info__icon contact-info__icon--letter"></span>
+                    </span>
+
                 </p>
             </fieldset>
 
