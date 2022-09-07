@@ -21,7 +21,16 @@
     font-size: 18px;
     line-height: 26px;
     text-align: center;
-     margin-top: 31px;
+    margin-top: 31px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 30px;
+        margin-top: 64px;
+    }
+
+    // @media (min-width: @desktop-width) {
+    //     width: 1200px;
+    // }
 }
 
 .page-photo__text {
@@ -32,17 +41,68 @@
     text-align: center;
     margin-top: 24px;
     width: 290px;
+
+    @media (min-width: @tablet-width) {
+        width: 440px;
+    }
 }
 
 .page-photo__list {
     list-style: none;
     margin-top: 52px;
+
+    @media (min-width: @tablet-width) {
+        width: 648px;
+        margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 1200px;
+    }
 }
 
 .page-photo__item {
     text-align: center;
     position: relative;
     margin-bottom: 32px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+    }
+}
+
+.page-photo__item:nth-of-type(3) figcaption {
+    
+    @media (min-width: @tablet-width) {
+        background-color: #EAEAEA;
+    }
+}
+
+.page-photo__item img {
+    
+    @media (min-width: @tablet-width) {
+        width: 324px;
+        height: 267px;
+    }
+    
+    @media (min-width: @desktop-width) {
+        width: 400px;
+    }
+}
+
+.page-photo__item picture {
+    
+    @media (min-width: @tablet-width) {
+        display: block;
+        width: 324px;
+        height: 267px;
+    }
+    
+    @media (min-width: @desktop-width) {
+        width: 400px;
+    }
 }
 
 
@@ -54,7 +114,11 @@
 
     position: absolute;
     top: -22px;
-    left: -15px;
+    left: 0px;
+
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
 }
 
 .page-photo__item::after {
@@ -65,9 +129,42 @@
 
     position: absolute;
     top: 396px;
-    left: -15px;
+    left: 0px;
+
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
 }
 
 .page-photo__item:last-child {
     margin-bottom: 48px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+    }
+}
+
+.page-photo__raod img {
+
+    @media (min-width: @tablet-width) {
+        width: 648px;
+        height: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 1200px;
+    }
+}
+
+.page-photo__raod picture {
+
+    @media (min-width: @tablet-width) {
+        display: block;
+        width: 648px;
+        height: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 1200px;
+    }
 }

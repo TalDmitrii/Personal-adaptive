@@ -3,11 +3,27 @@
     position: relative;
     padding: 0;
     margin-top: 40px;
+
+    @media (min-width: @tablet-width) {
+        order: -1;
+        margin: 0;
+    }
 }
 
 .radio__legend {
     text-align: center;
     margin-bottom: 37px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 21px;
+        margin-left: 60px;
+        margin-bottom: 73px;
+        text-align: left;
+    }    
+
+    @media (min-width: @desktop-width) {
+        margin-left: 200px;
+    }
 }   
 
 .radio__item {
@@ -18,9 +34,26 @@
     text-transform: initial;
 
     position: relative;
+
+    @media (min-width: @tablet-width) {
+        text-align: left;
+        margin-left: 135px;
+        margin-bottom: 52px;
+    }  
+
+    @media (min-width: @desktop-width) {
+        margin-left: 200px;
+    }
 }
 
-.radio__item::before {
+.radio__item:last-of-type {
+
+    @media (min-width: @tablet-width) {
+        margin-bottom: 0;
+    }   
+}
+
+.radio__decor::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -28,22 +61,21 @@
     border-radius: 50%;
     background-color: #F2F2F2;
     position: absolute;
-    top: -18px;
-    left: -70px;
+    top: -14px;
+    left: -71px;
 }
 
-.radio__item::after {
+.radio__decor::after {
     content: "";
     width: 20px;
     height: 20px;
     border-radius: 50%;
     position: absolute;
-    top: 2px;
-    left: -52px;
-    // background-color: #000000;
+    top: 0px;
+    left: -57px;
 }
 
-.radio input:checked ~ .radio__item::after {
+.review__fieldset input:checked ~ .radio__decor::after {
     background-color: #000000;
 }
 
@@ -55,5 +87,8 @@
 
     position: absolute;
     top: 210px;
-    left: -15px;
+
+    @media (min-width: @tablet-width) {
+        display: none;
+    }  
 }

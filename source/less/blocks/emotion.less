@@ -1,13 +1,85 @@
 .emotion {
     margin: 0;
     margin-top: 20px;
+
+    @media (min-width: @tablet-width) {
+        width: 648px;
+        margin: 22px auto 58px;
+    }  
+
+    @media (min-width: @desktop-width) {
+        width: 960px;
+    }
 }
 
 .emotion__label {
     text-align: center;
     margin-bottom: 15px;
     display: block;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+        font-size: 21px;
+        margin-bottom: 54px;
+    }  
 }
+
+.emotion__label::before,
+.emotion__label::after {
+
+    @media (min-width: @tablet-width) {
+        content: "";
+        width: 120px;
+        height: 1px;
+        background-color: #E5E5E5;
+
+        position: absolute;
+        top: 10px;
+    }  
+
+    @media (min-width: @desktop-width) {
+        width: 260px;
+    }
+}
+
+.emotion__label::before {
+
+    @media (min-width: @tablet-width) {
+        left: 0px;
+    }  
+}
+
+.emotion__label::after {
+
+    @media (min-width: @tablet-width) {
+        left: 528px;
+    }  
+
+    @media (min-width: @desktop-width) {
+        left: 700px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .emotion textarea {
     border: none;
@@ -21,5 +93,16 @@
     margin-left: 20px;
     padding: 9px 0 11px 19px;
     font-weight: 700;
+
+    @media (min-width: @tablet-width) {
+        padding: 18px 0 0 21px;
+        width: auto;
+        margin: 0;
+        width: 648px;
+    }  
+
+    @media (min-width: @desktop-width) {
+        width: 960px;
+    }
 }
 

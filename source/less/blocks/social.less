@@ -8,6 +8,11 @@
     padding-right: 85px;
     margin-top: 34px;
     margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .social__link {
@@ -19,6 +24,10 @@
 
 .social__item {
     position: relative;
+
+    @media (min-width: @tablet-width) {
+        margin: 0 3px;
+    }
 }
 
 .social__link::after {

@@ -12,7 +12,11 @@
 <body class="page__body">
     <header class="page-header">
         <a class="page-header__logo" href="#">
-            <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+            <picture>
+                <source srcset="img/logotype-desktop.svg" media="(min-width: 1200px)">
+                <source srcset="img/logotype-tablet.svg" media="(min-width: 768px)">
+                <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+            </picture> 
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
@@ -46,8 +50,11 @@
     </header>
 
     <main class="review">
-        <div class="review__photo">
+        <!-- <div class="review__photo">
             <img src="img/back-desktop.jpg" alt="Вид Седона" width="320px" height="214px">
+        </div> -->
+
+        <div class="page-main__intro">
         </div>
 
         <h1 class="review__title">
@@ -61,7 +68,7 @@
 
             <fieldset class="review__introduce introduce">
                 <legend class="form__title">
-                    Представтесь:
+                    Представьтесь:
                 </legend>
                 <p class="introduce__item">
                     <label class="introduce__label" for="appoinment__name">Имя*:</label>
@@ -72,7 +79,7 @@
                     <input id="surname" type="text" name="surname" placeholder="Иванов">
                 </p>
                 <p class="introduce__item">
-                    <label class="introduce__label" for="patronymick">Отчество</label>
+                    <label class="introduce__label" for="patronymick">Отчество:</label>
                     <input id="patronymick" type="text" name="patronymick" placeholder="Александрович">
                 </p>
             </fieldset>
@@ -83,7 +90,9 @@
                 </legend>
 
                 <p class="contact-info__item">
-                    <label class="contact-info__label" for="phone">Контактный телефон*:</label>
+                    <label class="contact-info__label" for="phone">
+                        <span class="contact-info__phone contact-info__phone--hidden">Контактный</span>  телефон*:
+                    </label>
 
                     <span class="contact-info__wrap">
                         <input id="phone" type="tel" name="phone" placeholder="Введите телефон">
@@ -108,15 +117,17 @@
                 <label class="radio__item">
                     <input class="visually-hidden" type="radio" id="positive" value="положительное" name="impression" checked>
                     Скорее положительное
-                    <!-- <span class="radio__decor"></span> -->
+                    <span class="radio__decor"></span>
                 </label>
                 <label class="radio__item">
                     <input class="visually-hidden" type="radio" id="negative" value="отрицательное" name="impression">
                     Скорее отрицательное
+                    <span class="radio__decor"></span>
                 </label>
                 <label class="radio__item">
                     <input class="visually-hidden" type="radio" id="indifferent" value="нет ответа" name="impression">
                     Затрудняюсь ответить
+                    <span class="radio__decor"></span>
                 </label>
             </fieldset>
 
@@ -154,6 +165,7 @@
                 <textarea name="emotion" id="emotion" cols="30" rows="10">Опишите подробно все свои восторги </textarea>
             </p>
             <button class="review__btn button" type="submit">Отправить отзыв</button>
+            <span class="form__option">*-Обязательные поля</span>
         </form>
     </main>
 

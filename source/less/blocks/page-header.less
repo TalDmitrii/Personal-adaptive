@@ -1,11 +1,22 @@
 .page-header {
     position: relative;
-    background-color: #fff;
+    background-color: @main-color;
 }
 
 .page-header__logo {
     display: block;
     margin-bottom: -30px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+        position: absolute;
+        top: 0px;
+        left: 333px;
+    }
+
+    @media (min-width: @desktop-width) {
+        left: 508px;
+    }
 }
 
 .page-header__logo img {
@@ -13,4 +24,9 @@
     margin: 0 auto;
     position: relative;
     z-index: 1;
+
+    @media (min-width: @desktop-width) {
+        width: 187px;
+        height: 97px;
+    }
 }
