@@ -1,5 +1,43 @@
+.form {
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 62px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-top: 40px;
+    }
+}
+
+
 .form__title {
     font-size: 18px;
     line-height: 26px;
     text-align: center;
+
+    @media (min-width: @tablet-width) {
+        font-size: 21px;
+        margin-left: 58px;
+        margin-bottom: 54px;
+        text-align: left;
+    }   
+}
+
+.form__option {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+        display: block;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        margin: 20px 60px 0 0;
+    }  
+
+    @media (min-width: @desktop-width) {
+        margin: 20px 120px 0 0;
+    }
 }

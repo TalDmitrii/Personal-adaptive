@@ -1,7 +1,35 @@
+.figcaption {
+
+    @media (min-width: @tablet-width) {
+        background-color: #F2F2F2;
+    }
+
+    @media (min-width: @desktop-width) {
+        // background-color: #000;
+        // opacity: 0.3;
+        color: #fff;
+        margin-top: -90px;
+        z-index: 1;
+    }
+}
+
 .figcaption__list {
     list-style: none;
     margin-left: 20px;
     margin-top: 11px;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+        padding: 22px 0 15px 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+        background-color: #000;
+        opacity: 0.3;
+        // color: #fff;
+        // opacity: 0.5;
+    }
 }
 
 .figcaption__item {
@@ -13,13 +41,20 @@
 
 .figcaption__item:nth-child(2) {
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform: initial;
     margin-top: 5px;
 }
 
 .figcaption__item:nth-child(3) {
     margin-top: 13px;
     margin-left: 37px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+        position: absolute;
+        top: 36px;
+        right: 20px;
+    }
 }
 
 .figcaption__decor {

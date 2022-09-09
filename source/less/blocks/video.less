@@ -1,5 +1,14 @@
 .video {
     position: relative;
+
+    @media (min-width: @tablet-width) {
+        width: 648px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 800px;
+    }
 }
 
 .video__title {
@@ -7,6 +16,11 @@
     line-height: 26px;
     text-align: center;
     margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 30px;
+        line-height: 36px;
+    }
 }
 
 .video__text {
@@ -18,10 +32,24 @@
     padding: 0;
     width: 240px;
     margin-bottom: 33px;
+
+    @media (min-width: @tablet-width) {
+        width: 445px;
+        margin-bottom: 62px;
+    }
 }
 
 .video img {
     display: block;
+
+    @media (min-width: @tablet-width) {
+        width: 648px;
+        height: 500px;
+    }
+    
+    @media (min-width: @desktop-width) {
+        width: 800px;
+    }
 }
 
 .video__track {
@@ -29,11 +57,21 @@
     width: 280px;
     height: 45px;
     background-color: #000;
-    margin: 0 auto;
     opacity: 0.6;
     position: absolute;
     bottom: 66px;
     left: 20px;
+
+    @media (min-width: @tablet-width) {
+        width: 648px;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 800px;
+        height: 93px;
+    }
 }
 
 .video__track::before {
@@ -45,6 +83,16 @@
     top: 22px;
     left: 23px;
     opacity: 0.2;
+
+    @media (min-width: @tablet-width) {
+        width: 389px;
+        left: 93px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 540px;
+        top: 46px;
+    }
 }
 
 .video__track::after {
@@ -56,5 +104,13 @@
     top: 18px;
     left: 60px;
     border-radius: 50%;
+
+    @media (min-width: @tablet-width) {
+        left: 204px;
+    }
+
+    @media (min-width: @desktop-width) {
+        top: 43px;
+    }
 }
 

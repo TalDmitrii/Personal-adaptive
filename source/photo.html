@@ -12,7 +12,11 @@
 <body class="page__body">
     <header class="page-header">
         <a class="page-header__logo" href="#">
-            <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+            <picture>
+                <source srcset="img/logotype-desktop.svg" media="(min-width: 1200px)">
+                <source srcset="img/logotype-tablet.svg" media="(min-width: 768px)">
+                <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+            </picture> 
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
@@ -46,8 +50,11 @@
     </header>
 
     <main class="page-photo">
-        <div class="page-photo__photo">
+        <!-- <div class="page-photo__photo">
             <img src="img/back-desktop.jpg" alt="Вид Седона" width="320px" height="214px">
+        </div> -->
+
+        <div class="page-main__intro">
         </div>
 
         <h1 class="page-photo__title">Фото и видео</h1>
@@ -58,7 +65,12 @@
         <ul class="page-photo__list">
             <li class="page-photo__item">
                 <figure class="page-photo__raod">
-                    <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+                    <picture>
+                        <source srcset="img/photo-1-desktop.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/photo-1-tablet.jpg" media="(min-width: 768px)">
+                        <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+                    </picture>
+                    
                     <figcaption class="page-photo__figcaption figcaption">
                         <ul class="figcaption__list">
                             <li class="figcaption__item">Неродные просторы</li>
@@ -73,7 +85,12 @@
             </li>
             <li class="page-photo__item">
                 <figure class="page-photo__vegetation">
-                    <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+                    <picture>
+                        <source srcset="img/photo-2-desktop.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/photo-2-tablet.jpg" media="(min-width: 768px)">
+                        <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+                    </picture>
+                    
                     <figcaption class="page-photo__figcaption figcaption">
                         <ul class="figcaption__list">
                             <li class="figcaption__item">Местная растительность</li>
@@ -88,7 +105,12 @@
             </li>
             <li class="page-photo__item">
                 <figure class="page-photo__road-nord">
-                    <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+                    <picture>
+                        <source srcset="img/photo-3-desktop.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/photo-3-tablet.jpg" media="(min-width: 768px)">
+                        <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+                    </picture>
+                    
                     <figcaption class="page-photo__figcaption figcaption">
                         <ul class="figcaption__list">
                             <li class="figcaption__item">Дорога на север</li>
@@ -103,7 +125,12 @@
             </li>
             <li class="page-photo__item">
                 <figure class="page-photo__bridge">
-                    <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+                    <picture>
+                        <source srcset="img/photo-4-desktop.jpg" media="(min-width: 1200px)">
+                        <source srcset="img/photo-4-tablet.jpg" media="(min-width: 768px)">
+                        <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+                    </picture>
+                    
                     <figcaption class="page-photo__figcaption figcaption">
                         <ul class="figcaption__list">
                             <li class="figcaption__item">Мост дьявола</li>
@@ -123,7 +150,12 @@
             <p class="video__text">
                 Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
             </p>
-            <img src="img/video-mobile.jpg" width="320" height="201" alt="Видео">
+            <picture>
+                <source srcset="img/video-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="img/video-tablet.jpg" media="(min-width: 768px)">
+                <img src="img/video-mobile.jpg" width="320" height="201" alt="Видео">
+            </picture>
+            
             <span class="video__track"></span>
             <div class="video-btn">
                 <button class="video-btn__position video-btn__position--replay" type="button" aria-label="replay"></button>

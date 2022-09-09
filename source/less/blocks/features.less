@@ -3,12 +3,39 @@
     text-align: left;
     margin-top: 30px;
     margin-bottom: 35px;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        margin-top: 120px;
+    }
+
+    // @media (min-width: @desktop-width) {
+    //     width: 800px;
+    // }
 }
 
 .features__item {
     margin-top: 26px;
     margin-left: 69px;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+        // margin: 0 auto;
+        margin: 0;
+        text-align: center;
+        min-width: 193px;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-direction: column;        
+    }
+}
+
+.features__item:nth-child(1) .features__text {
+
+    // @media (min-width: @tablet-width) {
+    //     padding: 0 20px;
+        
+    // }
 }
 
 .features__title {
@@ -20,6 +47,10 @@
     line-height: 21px;
     font-weight: 400;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+        padding: 0 38px;     
+    }
 }
 
 .features__item::after {
@@ -27,6 +58,15 @@
     position: absolute;
     top: -12px;
     left: -48px;
+
+    @media (min-width: @tablet-width) {
+        top: -90px;
+        left: 95px;
+    }
+
+    @media (min-width: @desktop-width) {
+        left: 170px;
+    }
 }
 
 
@@ -34,16 +74,41 @@
     background-image: url(../img/icon-house.svg);
     width: 39px;
     height: 37px;
+
+    @media (min-width: @tablet-width) {
+        background-image: url(../img/icon-house-tablet.svg);
+        width: 75px;
+        height: 72px;
+    }
+}
+
+.features__item--gift {
+
+    @media (min-width: @tablet-width) {
+        order: 2;
+    }
 }
 
 .features__item--gift::after {
     background-image: url(../img/icon-gift.svg);
     width: 32px;
     height: 38px;
+
+    @media (min-width: @tablet-width) {
+        background-image: url(../img/icon-gift-tablet.svg);
+        width: 64px;
+        height: 75px;
+    }
 }
 
 .features__item--food::after {
     background-image: url(../img/icon-burger.svg);
     width: 40px;
     height: 35px;
+
+    @media (min-width: @tablet-width) {
+        background-image: url(../img/icon-burger-tablet.svg);
+        width: 76px;
+        height: 68px;
+    }
 }

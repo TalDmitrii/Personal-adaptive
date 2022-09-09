@@ -1,3 +1,19 @@
+.page-footer {
+    background-color: @main-color;
+    padding-top: 29px;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 97px 0 36px;
+    }
+    
+    @media (min-width: @desktop-width) {
+        padding-top: 102px;
+    }
+}
+
 .page-footer__title {
     font-size: 21px;
     line-height: 26px;
@@ -6,5 +22,12 @@
 
     display: block;
     text-align: center;
-    margin-top: 29px;
+
+    @media (min-width: @tablet-width) {
+        margin-left: 45px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-left: 104px;
+    }
 }

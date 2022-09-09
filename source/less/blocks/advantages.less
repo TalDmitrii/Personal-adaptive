@@ -7,11 +7,30 @@
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 27px;
+
+    @media (min-width: @tablet-width) {
+        width: 520px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 484px;
+    }
 }
 
 .advantages__list {
     list-style: none;
     width: 320px;
+
+    @media (min-width: @tablet-width) {
+        width: 768px;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 1200px;
+    }
 }
 
 .advantages__item {
@@ -27,6 +46,17 @@
         top: 166px;
         left: 20px;
         background-color: #D6D6D6;
+    }
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &:nth-child(3)::after,
+        &:nth-child(4)::after {
+            display: none;
+        }
     }
 }
 
@@ -53,6 +83,15 @@
     line-height: 21px;
     font-weight: 400;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+        width: 256px;
+        height: 256px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 400px;
+    }
 }
 
 .advantages__description--picture {
@@ -62,12 +101,37 @@
 
 .advantages__img {
     display: block;
+
+    @media (min-width: @tablet-width) {
+        width: 512px;
+        height: 256px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 800px;
+    }
 }
 
 .advantages__header {
     font-size: 18px;
     line-height: 26px;
     padding-top: 26px;
+
+    @media (min-width: @tablet-width) {
+        padding: 40px 64px 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 40px 136px 20px;
+    }
+}
+
+.advantages__number {
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+    }
 }
 
 .advantages__number::before,
@@ -78,47 +142,85 @@
     // background-color: #fff;
     background-color: #000;
     position: absolute;
-    top: 76px;
+    top: 8px;
 }
 
 .advantages__number::before {
     content: "";
     left: 134px;
+
+    @media (min-width: @tablet-width) {
+        left: 100px;
+    }
+
+    @media (min-width: @desktop-width) {
+        left: 170px;
+    }
 }
 
 .advantages__number::after {
     content: "";
     left: 176px;
+
+    @media (min-width: @tablet-width) {
+        left: 144px;
+    }
+
+    @media (min-width: @desktop-width) {
+        left: 216px;
+    }
 }
 
+.advantages__item:nth-child(2) .advantages__description--picture {
+    order: 2;
+}
 
-// Не понял, как прописать цвет штриха в выбранном элементе
-
-// .advantages__list .advantages__number:nth-of-type(2)::before{
-//     background-color: #fff;
-// }
-
-// .advantages__item:nth-child(3)::after,
-
-// .advantages__number:nth-child(3)::before {
-//     background-color: #000;
-// }
-
-// .advantages__number:nth-of-type(3)::before {
-//     background-color: #000;
-// }
-
-// .advantages__number:last-of-type::before {
-//     background-color: #000;
-// }
+.advantages__item:nth-child(1) .advantages__number::before,
+.advantages__item:nth-child(1) .advantages__number::after,
+.advantages__item:nth-child(2) .advantages__number::before,
+.advantages__item:nth-child(2) .advantages__number::after {
+    background-color: #fff;
+}
 
 .advantages__text {
     padding-bottom: 24px;
     width: 268px;
-    margin: 0 auto;   
+    margin: 0 auto;  
+    
+    @media (min-width: @tablet-width) {
+        width: auto;
+        padding: 20px 34px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding-left: 58px;
+    }
 }
 
-// .advantages__list .advantages__text:nth-child(4) {
-//     width: 237px;
-// }
+.advantages__item:nth-child(4) .advantages__text,
+.advantages__item:nth-child(5) .advantages__text {
+    padding: 20px 54px;
+}
+
+.advantages__item:nth-child(2) .advantages__text,
+.advantages__item:nth-child(4) .advantages__text {
+    
+    @media (min-width: @desktop-width) {
+        padding-left: 86px;
+    }
+}
+
+.advantages__item:nth-child(4) .advantages__text {
+    
+    @media (min-width: @desktop-width) {
+       padding-left: 70px;
+    }
+}
+
+.advantages__item:nth-child(4) {
+    
+    @media (min-width: @desktop-width) {
+       background-color: #fff;
+    }
+}
 
