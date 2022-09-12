@@ -3,10 +3,10 @@
 }
 
 .main-nav__wrapper {
-    position: absolute;
-    bottom: 54px;
-    background-color: #81B3D2;
-    color: #fff;
+    // position: absolute;
+    // bottom: 54px;
+    // background-color: #81B3D2;
+    // color: #fff;
 
     @media (min-width: @tablet-width) {
         width: 768px;
@@ -27,13 +27,14 @@
 
 .main-nav__toggle {
     position: absolute;
-    bottom: 18px;
-    right: 10px;
+    top: 17px;
+    right: 20px;
     width: 23px;
     height: 22px;
     background-image: url(../img/icon-menu.svg);
     border: none;
     background-color: #fff;
+    cursor: pointer;
 
     @media (min-width: @tablet-width) {
         display: none;
@@ -44,3 +45,11 @@
     //     border-width: 50px 600px 0 600px;
     // }
 }
+
+.main-nav__toggle:hover svg {
+    fill: #000;
+}
+
+// .main-nav__toggle:focus {
+//     color: rgba(0, 0, 0, 0.3);
+// }

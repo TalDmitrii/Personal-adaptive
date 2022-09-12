@@ -2,63 +2,82 @@
 
     @media (min-width: @tablet-width) {
         display: flex;
+        justify-content: space-between;
+
     }
 }
 
 
 .site-list__item {
-    width: 320px;
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    // width: 320px;
+    // box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 
+    display: none;
+    
     @media (min-width: @tablet-width) {
-        box-shadow: none;
-        height: auto;
-        padding: 14px 0 14px;
-    }
-}
-
-.site-list__item:nth-child(1) {
-
-    @media (min-width: @tablet-width) {
-        padding-left: 34px;
+        display: block;
+        min-width: 153px;
+        text-align: center;
     }
 
     @media (min-width: @desktop-width) {
-        padding-left: 76px;
+        min-width: 239px;
     }
 }
 
-.site-list__item:nth-child(4) {
+.site-list__item:hover {
+    color: #81B3D2;
+}
+
+.site-list__item:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-list__item--active {
+    color: #766357;
+}
+
+.site-list__item--active:hover {
+    color: #604E43;
+}
+
+.site-list__item--active:focus {
+    color: #604E43;
+    opacity: 0.3;
+}
+
+.site-list__item:nth-child(1),
+.site-list__item:nth-child(2),
+.site-list__item:nth-child(4),
+.site-list__item:nth-child(5) {
+    
+    @media (min-width: @tablet-width) {
+        padding-top: 15px;
+    }
+}
+
+
+.site-list__item--logo {
+    display: block;
 
     @media (min-width: @tablet-width) {
-        padding-right: 20px;
+        min-width: 156px;
     }
-
     @media (min-width: @desktop-width) {
-        padding-right: 76px;
+        min-width: 244px;
     }
 }
+
+
 
 .site-list__item a {
     text-decoration: none;
-    line-height: 40px;
     display: block;
-    padding: 8px 0;
-    text-align: center;
 
     @media (min-width: @tablet-width) {
         font-size: 14px;
         line-height: 26px;
-        padding: 0;
-        text-align: left;
     }    
 }
 
-.site-list__item:nth-child(3) a,
-.site-list__item:nth-child(4) a {
-
-    @media (min-width: @tablet-width) {
-        text-align: right;
-    }
-}
 
