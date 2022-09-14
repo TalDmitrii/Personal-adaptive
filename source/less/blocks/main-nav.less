@@ -29,9 +29,9 @@
     position: absolute;
     top: 17px;
     right: 20px;
-    width: 23px;
-    height: 22px;
-    background-image: url(../img/icon-menu.svg);
+    // width: 23px;
+    // height: 22px;
+    // background-image: url(../img/icon-menu.svg);
     border: none;
     background-color: #fff;
     cursor: pointer;
@@ -46,10 +46,8 @@
     // }
 }
 
-.main-nav__toggle:hover svg {
-    fill: #000;
+.main-nav__toggle:hover path,
+.main-nav__toggle:focus path {
+    fill: #81B3D2;
+    opacity: 0.6;
 }
-
-// .main-nav__toggle:focus {
-//     color: rgba(0, 0, 0, 0.3);
-// }

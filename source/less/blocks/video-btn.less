@@ -30,12 +30,10 @@
 .video-btn__position--replay {
     width: 16px;
     height: 20px;
-    background-image: url(../img/replay.svg);
     left: 23px;
 
     @media (min-width: @tablet-width) {
-        background-image: url(../img/replay-tablet.svg);
-        top: -30px;
+        top: -34px;
         left: -280px;
     }
 
@@ -48,12 +46,10 @@
 .video-btn__position--subtitles {
     width: 32px;
     height: 20px;
-    background-image: url(../img/subtitles.svg);
     right: 70px;
 
     @media (min-width: @tablet-width) {
-        background-image: url(../img/subtitles-tablet.svg);
-        top: -30px;
+        top: -34px;
         left: 200px;
     }
 
@@ -66,17 +62,36 @@
 .video-btn__position--fullscreen {
     width: 20px;
     height: 20px;
-    background-image: url(../img/fullscreen.svg);
     right: 23px;
 
     @media (min-width: @tablet-width) {
-        background-image: url(../img/fullscreen-tablet.svg);
-        top: -30px;
+        top: -34px;
         left: 266px;
     }
 
     @media (min-width: @desktop-width) {
         top: -54px;
         left: 350px;
+    }
+}
+
+.video-btn__position--replay path,
+.video-btn__position--subtitles path,
+.video-btn__position--fullscreen path {
+
+    @media (min-width: @tablet-width) {
+        fill: #fff;
+    }
+}
+
+
+.video-btn__position--replay:hover path,
+.video-btn__position--subtitles:hover path,
+.video-btn__position--fullscreen:hover path {
+    fill: #333333;
+
+    @media (min-width: @tablet-width) {
+        fill: #fff;
+        opacity: 0.6;
     }
 }
