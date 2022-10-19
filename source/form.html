@@ -11,9 +11,42 @@
 
 <body class="page__body">
     <header class="page-header">
+        <div class="pop-up pop-up--closed pop-up--nojs">
+            <button class="pop-up__toggle" type="button">
+                <span class="visually-hidden">Закрыть меню</span>                
+            </button>
+            <ul class="pop-up__list">
+                <li class="pop-up__item">
+                <!-- <li class="pop-up__item pop-up__item--active"> -->
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="pop-up__item">
+                    <a href="photo.html">
+                        Фото и видео
+                    </a>
+                </li>
+                <li class="pop-up__item">
+                    <a href="form.html">
+                        Форма отзыва
+                    </a>
+                </li>
+                <li class="pop-up__item">
+                    <a href="#">
+                        HTML Academy
+                    </a>
+                </li>
+            </ul>
+        </div>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+                    <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+                    <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+                    </svg>
             </button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
@@ -50,6 +83,38 @@
             </div>
         </nav>
     </header>
+
+    <script>
+        var navPop = document.querySelector('.pop-up');
+        var popToggle = document.querySelector('.pop-up__toggle');
+        var navToggle = document.querySelector('.main-nav__toggle');
+    
+        navPop.classList.remove('pop-up--nojs');
+    
+        popToggle.addEventListener('click', function() {
+            if (navPop.classList.contains('pop-up--closed')) {
+                navPop.classList.remove('pop-up--closed');
+                navPop.classList.add('pop-up--opened');
+            }
+            else {
+                navPop.classList.add('pop-up--closed');
+                navPop.classList.remove('pop-up--opened');
+            }
+        }
+        );
+
+        navToggle.addEventListener('click', function() {
+            if (navPop.classList.contains('pop-up--closed')) {
+                navPop.classList.remove('pop-up--closed');
+                navPop.classList.add('pop-up--opened');
+            }
+            else {
+                navPop.classList.add('pop-up--closed');
+                navPop.classList.remove('pop-up--opened');
+            }
+        }
+        );
+    </script>
 
     <main class="review">
         <!-- <div class="review__photo">
@@ -164,9 +229,9 @@
 
             <p class="review_emotion emotion">
                 <label class="emotion__label" for="emotion">Опишите свои эмоции:</label>
-                <textarea name="emotion" id="emotion" cols="30" rows="10">Опишите подробно все свои восторги </textarea>
+                <textarea name="emotion" id="emotion" cols="30" rows="4">Опишите подробно все свои восторги </textarea>
             </p>
-            <button class="review__btn button" type="submit">Отправить отзыв</button>
+            <button class="review__btn button" type="submit" disabled>Отправить отзыв</button>
             <span class="form__option">*-Обязательные поля</span>
         </form>
     </main>
@@ -191,7 +256,7 @@
 
         <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
-            <a href="#" class="copyright__link button button--copyright">
+            <a href="#" class="copyright__link">
                 <img src="img/htmlacademy.svg" alt="логотип htmlacademy" width="27" height="34">
             </a>
         </div>
