@@ -36,18 +36,7 @@
     cursor: pointer;
 }
 
-.pop-up--opened .pop-up__toggle::after {
-    content: "";
-    width: 24px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    top: 8px;
-    right: -2px;
-    transform: rotate(45deg);
-
-}
-
+.pop-up--opened .pop-up__toggle::after,
 .pop-up--opened .pop-up__toggle::before {
     content: "";
     width: 24px;
@@ -56,8 +45,14 @@
     position: absolute;
     top: 8px;
     right: -2px;
-    transform: rotate(-45deg);
+}
 
+.pop-up--opened .pop-up__toggle::after {
+    transform: rotate(45deg);
+}
+
+.pop-up--opened .pop-up__toggle::before {
+    transform: rotate(-45deg);
 }
 
 
