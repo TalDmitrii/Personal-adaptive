@@ -84,38 +84,6 @@
         </nav>
     </header>
 
-    <script>
-        var navPop = document.querySelector('.pop-up');
-        var popToggle = document.querySelector('.pop-up__toggle');
-        var navToggle = document.querySelector('.main-nav__toggle');
-    
-        navPop.classList.remove('pop-up--nojs');
-    
-        popToggle.addEventListener('click', function() {
-            if (navPop.classList.contains('pop-up--closed')) {
-                navPop.classList.remove('pop-up--closed');
-                navPop.classList.add('pop-up--opened');
-            }
-            else {
-                navPop.classList.add('pop-up--closed');
-                navPop.classList.remove('pop-up--opened');
-            }
-        }
-        );
-
-        navToggle.addEventListener('click', function() {
-            if (navPop.classList.contains('pop-up--closed')) {
-                navPop.classList.remove('pop-up--closed');
-                navPop.classList.add('pop-up--opened');
-            }
-            else {
-                navPop.classList.add('pop-up--closed');
-                navPop.classList.remove('pop-up--opened');
-            }
-        }
-        );
-    </script>
-
     <main class="page-photo">
         <!-- <div class="page-photo__photo">
             <img src="img/back-desktop.jpg" alt="Вид Седона" width="320px" height="214px">
@@ -273,6 +241,28 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        var navPop = document.querySelector('.pop-up');
+        var popToggle = document.querySelector('.pop-up__toggle');
+        var navToggle = document.querySelector('.main-nav__toggle');
+    
+        navPop.classList.remove('pop-up--nojs');  
+    
+        popToggle.addEventListener('click', function() {
+                navPop.classList.add('pop-up--closed');
+                navPop.classList.remove('pop-up--opened');
+                navToggle.classList.remove('main-nav__toggle--hidden');
+        }
+        );
+
+        navToggle.addEventListener('click', function() {
+                navPop.classList.remove('pop-up--closed');
+                navPop.classList.add('pop-up--opened');
+                navToggle.classList.add('main-nav__toggle--hidden');
+        }
+        );
+    </script>
 
 </body>
 
