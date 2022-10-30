@@ -216,11 +216,14 @@
   background-color: #81B3D2;
   border: none;
   cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 17px;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #669EC0;
 }
-.button:focus {
+.button:active {
   background-color: #5496BD;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -991,8 +994,6 @@
   text-decoration: none;
   width: 280px;
   margin: 27px auto 49px;
-  padding-top: 15px;
-  padding-bottom: 17px;
 }
 @media (min-width: 768px) {
   .hotel__button {
@@ -1649,10 +1650,8 @@
   font-size: 21px;
   line-height: 26px;
   width: 280px;
-  height: 58px;
   margin-left: 20px;
   margin-top: 51px;
-  padding: 0;
   margin-bottom: 47px;
 }
 @media (min-width: 768px) {
