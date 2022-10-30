@@ -3,21 +3,26 @@
     "scripts": {
         "build": "gulp build",
         "editorconfig": "editorconfig-cli",
-        "start": "npm run build && gulp serve",
+        "start": "gulp",
         "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-        "eslint": "eslint source/js",
-        "test": "npm run editorconfig && npm run stylelint && npm run eslint"
+        "test": "npm run editorconfig && npm run stylelint"
     },
     "devDependencies": {
-        "autoprefixer": "^9.5.1",
+        "autoprefixer": "9.1.x",
         "browser-sync": "^2.26.3",
+        "del": "^3.0.0",
         "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
         "gulp-cssbeautify": "^1.0.1",
         "gulp-csso": "^3.0.1",
         "gulp-less": "^4.0.1",
         "gulp-plumber": "^1.2.1",
         "gulp-postcss": "^8.0.0",
+        "gulp-posthtml": "^3.0.4",
+        "gulp-rename": "^1.4.0",
+        "gulp-svgstore": "^7.0.1",
         "gulp-sourcemaps": "^3.0.0",
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "posthtml-include": "^1.2.0"
     }
 }
