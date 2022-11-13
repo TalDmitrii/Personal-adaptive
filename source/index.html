@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedona</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -16,11 +18,10 @@
     <header class="page-header">
         <div class="pop-up pop-up--closed pop-up--nojs">
             <button class="pop-up__toggle" type="button">
-                <span class="visually-hidden">Закрыть меню</span>                
+                <span class="visually-hidden">Закрыть меню</span>
             </button>
             <ul class="pop-up__list">
                 <li class="pop-up__item">
-                <!-- <li class="pop-up__item pop-up__item--active"> -->
                     <a href="index.html">
                         Главная
                     </a>
@@ -46,10 +47,10 @@
             <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-                    <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-                    <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
-                    </svg>
+                    <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+                    <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+                    <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+                </svg>
             </button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
@@ -69,7 +70,7 @@
                                 <source srcset="img/logotype-desktop.svg" media="(min-width: 1200px)">
                                 <source srcset="img/logotype-tablet.svg" media="(min-width: 768px)">
                                 <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
-                            </picture>            
+                            </picture>
                         </a>
                     </li>
                     <li class="site-list__item">
@@ -105,23 +106,24 @@
             </h2>
             <ul class="advantages__list">
                 <li class="advantages__item">
-                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
                     <div class="advantages__description advantages__description--picture">
                         <h3 class="advantages__header">Настоящий городок</h3>
                         <p class="advantages__number">№1</p>
                         <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
                     <picture class="advantages__pic">
-                        <source srcset="img/photo-city-desktop.jpg, img/photo-city-desktop_2x.jpg" media="(min-width: 1200px)">
-                        <source srcset="img/photo-city-tablet.jpg, img/photo-city-tablet_2x.jpg 2x" media="(min-width: 768px)">
-                        <img class="advantages__img" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile_2x.jpg 2x" alt="фото города" width="320" height="260">
+                        <source srcset="img/photo-city-desktop.jpg, img/photo-city-desktop_2x.jpg"
+                            media="(min-width: 1200px)">
+                        <source srcset="img/photo-city-tablet.jpg, img/photo-city-tablet_2x.jpg 2x"
+                            media="(min-width: 768px)">
+                        <img class="advantages__img" src="img/photo-city-mobile.jpg"
+                            srcset="img/photo-city-mobile_2x.jpg 2x" alt="фото города" width="320" height="260">
                     </picture>
                     <ul class="advantages__features features">
                         <li class="features__item features__item--house">
                             <h4 class="features__title">
                                 Жилье
                             </h4>
-                            <!-- Иконку с домом (svg) введем в css -->
                             <p class="features__text">
                                 Рекомендуем пожить в настоящем мотеле, все как в кино!
                             </p>
@@ -130,7 +132,6 @@
                             <h4 class="features__title">
                                 СУВЕНИРЫ
                             </h4>
-                            <!-- Иконку с домом (svg) введем в css -->
                             <p class="features__text">
                                 Не только китайского, но и местного производства!
                             </p>
@@ -139,7 +140,6 @@
                             <h4 class="features__title">
                                 ЕДА
                             </h4>
-                            <!-- Иконку с домом (svg) введем в css -->
                             <p class="features__text">
                                 Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
                             </p>
@@ -147,20 +147,21 @@
                     </ul>
                 </li>
                 <li class="advantages__item">
-                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
                     <div class="advantages__description  advantages__description--picture">
                         <h3 class="advantages__header">ТАМ ЕСТЬ Мост дьявола</h3>
                         <p class="advantages__number">№2</p>
                         <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                     </div>
                     <picture class="advantages__pic">
-                        <source srcset="img/photo-bridge-desktop.jpg, img/photo-bridge-desktop_2x.jpg 2x" media="(min-width: 1200px)">
-                        <source srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet_2x.jpg 2x" media="(min-width: 768px)">
-                        <img  class="advantages__img" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile_2x.jpg 2x" alt="фото моста" width="320" height="260">
-                    </picture>                    
+                        <source srcset="img/photo-bridge-desktop.jpg, img/photo-bridge-desktop_2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <source srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet_2x.jpg 2x"
+                            media="(min-width: 768px)">
+                        <img class="advantages__img" src="img/photo-bridge-mobile.jpg"
+                            srcset="img/photo-bridge-mobile_2x.jpg 2x" alt="фото моста" width="320" height="260">
+                    </picture>
                 </li>
                 <li class="advantages__item">
-                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
                     <div class="advantages__description">
                         <h3 class="advantages__header">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
                         <p class="advantages__number">№3</p>
@@ -168,7 +169,6 @@
                     </div>
                 </li>
                 <li class="advantages__item">
-                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
                     <div class="advantages__description">
                         <h3 class="advantages__header">КРАСИВАЯ ДОРОГА</h3>
                         <p class="advantages__number">№4</p>
@@ -176,7 +176,6 @@
                     </div>
                 </li>
                 <li class="advantages__item">
-                    <!-- Разобрать теги. Понимаю, что должно быть три блока для их "резинового" позиционирования в сетке -->
                     <div class="advantages__description">
                         <h3 class="advantages__header">МАЛО ТУРИСТОВ</h3>
                         <p class="advantages__number">№5</p>
@@ -202,7 +201,7 @@
                     <source srcset="img/map-desktop.jpg" media="(min-width: 1200px)">
                     <source srcset="img/map-tablet.jpg" media="(min-width: 768px)">
                     <img src="img/map-mobile.jpg" alt="карта" width="320" height="350">
-                </picture>                   
+                </picture>
             </div>
         </section>
     </main>
@@ -239,20 +238,20 @@
         var navPop = document.querySelector('.pop-up');
         var popToggle = document.querySelector('.pop-up__toggle');
         var navToggle = document.querySelector('.main-nav__toggle');
-    
-        navPop.classList.remove('pop-up--nojs');  
-    
-        popToggle.addEventListener('click', function() {
-                navPop.classList.add('pop-up--closed');
-                navPop.classList.remove('pop-up--opened');
-                navToggle.classList.remove('main-nav__toggle--hidden');
+
+        navPop.classList.remove('pop-up--nojs');
+
+        popToggle.addEventListener('click', function () {
+            navPop.classList.add('pop-up--closed');
+            navPop.classList.remove('pop-up--opened');
+            navToggle.classList.remove('main-nav__toggle--hidden');
         }
         );
 
-        navToggle.addEventListener('click', function() {
-                navPop.classList.remove('pop-up--closed');
-                navPop.classList.add('pop-up--opened');
-                navToggle.classList.add('main-nav__toggle--hidden');
+        navToggle.addEventListener('click', function () {
+            navPop.classList.remove('pop-up--closed');
+            navPop.classList.add('pop-up--opened');
+            navToggle.classList.add('main-nav__toggle--hidden');
         }
         );
     </script>

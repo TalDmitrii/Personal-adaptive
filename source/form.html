@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedona</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
     <header class="page-header">
         <div class="pop-up pop-up--closed pop-up--nojs">
             <button class="pop-up__toggle" type="button">
-                <span class="visually-hidden">Закрыть меню</span>                
+                <span class="visually-hidden">Закрыть меню</span>
             </button>
             <ul class="pop-up__list">
                 <li class="pop-up__item">
-                <!-- <li class="pop-up__item pop-up__item--active"> -->
                     <a href="index.html">
                         Главная
                     </a>
@@ -43,10 +44,10 @@
             <button class="main-nav__toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-                    <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-                    <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
-                    </svg>
+                    <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+                    <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+                    <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+                </svg>
             </button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
@@ -66,7 +67,7 @@
                                 <source srcset="img/logotype-desktop.svg" media="(min-width: 1200px)">
                                 <source srcset="img/logotype-tablet.svg" media="(min-width: 768px)">
                                 <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
-                            </picture>            
+                            </picture>
                         </a>
                     </li>
                     <li class="site-list__item site-list__item--active">
@@ -85,10 +86,6 @@
     </header>
 
     <main class="review">
-        <!-- <div class="review__photo">
-            <img src="img/back-desktop.jpg" alt="Вид Седона" width="320px" height="214px">
-        </div> -->
-
         <div class="page-main__intro">
         </div>
 
@@ -126,7 +123,7 @@
 
                 <p class="contact-info__item">
                     <label class="contact-info__label" for="phone">
-                        <span class="contact-info__phone contact-info__phone--hidden">Контактный</span>  телефон*:
+                        <span class="contact-info__phone contact-info__phone--hidden">Контактный</span> телефон*:
                     </label>
 
                     <span class="contact-info__wrap">
@@ -150,7 +147,8 @@
                 <legend class="radio__legend">Ваше общее впечатление:</legend>
 
                 <label class="radio__item">
-                    <input class="visually-hidden" type="radio" id="positive" value="положительное" name="impression" checked>
+                    <input class="visually-hidden" type="radio" id="positive" value="положительное" name="impression"
+                        checked>
                     Скорее положительное
                     <span class="radio__decor"></span>
                 </label>
@@ -170,26 +168,25 @@
                 <legend class="checkbox__legend">Посещенные достопримечательности:</legend>
 
                 <label class="checkbox__item">
-                    <input class="visually-hidden" type="checkbox" id="bridge" value="Мост Дьявола"
-                        name="attraction" checked>
+                    <input class="visually-hidden" type="checkbox" id="bridge" value="Мост Дьявола" name="attraction"
+                        checked>
                     <span class="checkbox__decor"></span>
                     Мост Дьявола
                 </label>
                 <label class="checkbox__item">
-                    <input class="visually-hidden" type="checkbox" id="mountain" value="Гора-Колокол"
-                        name="attraction" checked>
+                    <input class="visually-hidden" type="checkbox" id="mountain" value="Гора-Колокол" name="attraction"
+                        checked>
                     <span class="checkbox__decor"></span>
                     Гора-Колокол
                 </label>
                 <label class="checkbox__item">
-                    <input class="visually-hidden" type="checkbox" id="park" value="Слайд-парк"
-                        name="attraction" checked>
+                    <input class="visually-hidden" type="checkbox" id="park" value="Слайд-парк" name="attraction"
+                        checked>
                     <span class="checkbox__decor"></span>
                     Слайд-парк
                 </label>
                 <label class="checkbox__item">
-                    <input class="visually-hidden" type="checkbox" id="rock" value="Красные скалы"
-                        name="attraction">
+                    <input class="visually-hidden" type="checkbox" id="rock" value="Красные скалы" name="attraction">
                     <span class="checkbox__decor"></span>
                     Красные скалы
                 </label>
@@ -234,20 +231,20 @@
         var navPop = document.querySelector('.pop-up');
         var popToggle = document.querySelector('.pop-up__toggle');
         var navToggle = document.querySelector('.main-nav__toggle');
-    
-        navPop.classList.remove('pop-up--nojs');  
-    
-        popToggle.addEventListener('click', function() {
-                navPop.classList.add('pop-up--closed');
-                navPop.classList.remove('pop-up--opened');
-                navToggle.classList.remove('main-nav__toggle--hidden');
+
+        navPop.classList.remove('pop-up--nojs');
+
+        popToggle.addEventListener('click', function () {
+            navPop.classList.add('pop-up--closed');
+            navPop.classList.remove('pop-up--opened');
+            navToggle.classList.remove('main-nav__toggle--hidden');
         }
         );
 
-        navToggle.addEventListener('click', function() {
-                navPop.classList.remove('pop-up--closed');
-                navPop.classList.add('pop-up--opened');
-                navToggle.classList.add('main-nav__toggle--hidden');
+        navToggle.addEventListener('click', function () {
+            navPop.classList.remove('pop-up--closed');
+            navPop.classList.add('pop-up--opened');
+            navToggle.classList.add('main-nav__toggle--hidden');
         }
         );
     </script>
