@@ -12,9 +12,6 @@
 </head>
 
 <body class="page__body">
-    <div class="sprite visually-hidden">
-        <include src="build/img/sprite.svg"></include>
-    </div>
     <header class="page-header">
         <div class="pop-up pop-up--closed pop-up--nojs">
             <button class="pop-up__toggle" type="button">
@@ -112,12 +109,9 @@
                         <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
                     <picture class="advantages__pic">
-                        <source srcset="img/photo-city-desktop.jpg, img/photo-city-desktop_2x.jpg"
-                            media="(min-width: 1200px)">
-                        <source srcset="img/photo-city-tablet.jpg, img/photo-city-tablet_2x.jpg 2x"
-                            media="(min-width: 768px)">
-                        <img class="advantages__img" src="img/photo-city-mobile.jpg"
-                            srcset="img/photo-city-mobile_2x.jpg 2x" alt="фото города" width="320" height="260">
+                        <source srcset="img/photo-city-desktop.jpg, img/photo-city-desktop_2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="img/photo-city-tablet.jpg, img/photo-city-tablet_2x.jpg 2x" media="(min-width: 768px)">
+                        <img class="advantages__img" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile_2x.jpg 2x" alt="фото города" width="320" height="260">
                     </picture>
                     <ul class="advantages__features features">
                         <li class="features__item features__item--house">
@@ -193,14 +187,14 @@
                 Укажите предполагаемые даты поездки, <br class="hotel-transition__tablet">
                 и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
-            <a class="hotel__button button" href="#" disabled>
+            <a class="hotel__button button" href="#">
                 Найти гостиницу
             </a>
             <div class="hotel__map">
                 <picture>
                     <source srcset="img/map-desktop.jpg" media="(min-width: 1200px)">
                     <source srcset="img/map-tablet.jpg" media="(min-width: 768px)">
-                    <img src="img/map-mobile.jpg" alt="карта" width="320" height="350">
+                    <img src="img/map-mobile.jpg" alt="Адрес" width="320" height="350">
                 </picture>
             </div>
         </section>
@@ -213,13 +207,13 @@
         <div class="page-footer__social social">
             <ul class="social__list">
                 <li class="social__item">
-                    <a class="social__link social__link--twitter" href="#" alt="Мы в Твиттере"></a>
+                    <a class="social__link social__link--twitter" href="#"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#" alt="Мы в Фейсбуке"></a>
+                    <a class="social__link social__link--facebook" href="#"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--youtube" href="#" alt="Мы в Ютюбе"></a>
+                    <a class="social__link social__link--youtube" href="#"></a>
                 </li>
             </ul>
         </div>
@@ -227,9 +221,7 @@
         <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
             <a href="#" class="copyright__link">
-                <svg width="27" height="35" viewBox="0 0 27 35">
-                    <use href="#htmlacademy"></use>
-                </svg>
+                <img src="img/htmlacademy.svg" alt="логотип htmlacademy" width="27" height="34">
             </a>
         </div>
     </footer>
